@@ -19,7 +19,7 @@
 
 nf-core/mag is used here as a bioinformatics best-practise analysis pipeline for assembly, binning and annotation of metagenome (metatranscriptome)s.
 
-![image](https://github.com/abu85/trans/assets/73113157/e199a164-3ec1-4d63-bfa0-250cb11d788f)
+![image](https://raw.githubusercontent.com/nf-core/mag/2.5.1//docs/images/mag_workflow.png)
 
 <a name="sec1"></a>
 ## 1. Pipeline summary

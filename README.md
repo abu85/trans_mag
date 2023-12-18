@@ -1,9 +1,9 @@
-<font size=20>__Transcriptome data analyses with nf-cor/mag pipeline (step by step)__</font>
+<font size=20>__Metagenome (metatranscriptome) data analyses with nf-cor/mag pipeline (step by step)__</font>
 
 ### Contents:
 1. [Pipeline summary](#sec1) </br>
 
-2. [transcriptome data anaylsis](#sec2)</br>
+2. [metagenome (metatranscriptome) data anaylsis](#sec2)</br>
     2.1. [log in to the server (hpc)](#sec2.1)</br>
     2.2. [Set your working directory and activate modules or packages](#sec2.2)</br>
     2.3. [Tmux overview](#sec2.3)</br>
@@ -17,7 +17,7 @@
           2.6.2. [nf-core mag pipeline execution or commands](#sec2.6.2)</br>
     
 
-nf-core/mag is used here as a bioinformatics best-practise analysis pipeline for assembly, binning and annotation of transcriptomes.
+nf-core/mag is used here as a bioinformatics best-practise analysis pipeline for assembly, binning and annotation of metagenome (metatranscriptome)s.
 
 ![image](https://github.com/abu85/trans/assets/73113157/e199a164-3ec1-4d63-bfa0-250cb11d788f)
 
@@ -29,13 +29,13 @@ The pipeline then:
 - assigns taxonomy to reads using Kraken2
 - performs assembly Megahit or Spades (the script is for megahit) and checks their quality using Quast
 - predicts protein-coding genes for the assemblies using Prodigal, and bins with Prokka and optionally MetaEuk
-- performs transcriptome binning using Metabat2, MaxBin2, concord (we choose maxbin2) and checks the quality of the genome bins using Busco, or CheckM, and optionally GUNC.
+- performs Metagenome (metatranscriptome) binning using Metabat2, MaxBin2, concord (we choose maxbin2) and checks the quality of the genome bins using Busco, or CheckM, and optionally GUNC.
 - optionally refines bins with DAS Tool
 - assigns taxonomy to bins using GTDB-Tk and/or CAT and optionally identifies viruses in assemblies using geNomad, or Eukaryotes with Tiara
 - Furthermore, the pipeline creates various reports in the results directory specified, including a MultiQC report summarizing some of the findings and software versions.
 
 <a name="sec2"></a>
-## 2. transcriptome data anaylsis
+## 2. Metagenomic (metatranscriptome) data anaylsis
 <a name="sec2.1"></a>
 #### 2.1. Log in to uppmax again (if needed)
 

@@ -1,7 +1,7 @@
-<font size=20>__Metagenome (metatranscriptome) data analyses with nf-cor/mag pipeline (step by step)__</font>
+<font size=20>__Metagenome (metatranscriptome) data analyses with [nf-cor/mag](https://nf-co.re/mag/2.5.1) pipeline (step by step)__</font>
 
 ### Contents:
-1. [Pipeline summary](#sec1) </br>
+1. [Pipeline summary (for us)](#sec1) </br>
 
 2. [metagenome (metatranscriptome) data anaylsis](#sec2)</br>
     2.1. [log in to the server (hpc)](#sec2.1)</br>
@@ -17,12 +17,12 @@
           2.6.2. [nf-core mag pipeline execution or commands](#sec2.6.2)</br>
     
 
-nf-core/mag is used here as a bioinformatics best-practise analysis pipeline for assembly, binning and annotation of metagenome (metatranscriptome)s.
+[nf-core/mag](https://nf-co.re/mag/2.5.1) is used here as a bioinformatics best-practise analysis pipeline for assembly, binning and annotation of metagenome (metatranscriptome)s.
 
 ![image](https://raw.githubusercontent.com/nf-core/mag/2.5.1//docs/images/mag_workflow.png)
 
 <a name="sec1"></a>
-## 1. Pipeline summary
+## 1. Pipeline summary (for us)
 By default, the pipeline currently perform on short and long reads, quality trims the reads and adapters with fastp, and performs basic QC with FastQC, and merge multiple sequencing runs.
 
 The pipeline then:

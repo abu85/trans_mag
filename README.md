@@ -74,9 +74,13 @@ All of this might seem to add unnecessary hassle but tmux is extremely valuable 
 #### 2.3.2 All the modules needs to be loaded from HPC cluster 
 (here it is shown for UPPMAX computer cluster )
 
+
 module load uppmax bioinfo-tools # load base UPPMAX environment modules, needed for everything else
+
 module load Nextflow # load Nextflow,  Note: Capital N!
+
 module load nf-core-pipelines/latest # load nf-core nexflow pipelines
+
 
 Limit the catche and directory for temporary files: 
 export NXF_OPTS='-Xms1g -Xmx4g'
